@@ -1,0 +1,52 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F6FF"/>
+      <stop offset="0.42" stop-color="#D8EEFF"/>
+      <stop offset="0.78" stop-color="#CDE8FF"/>
+      <stop offset="1" stop-color="#F5FAFF"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1170 150) rotate(90) scale(300 360)">
+      <stop stop-color="#FFF7D9"/>
+      <stop offset="1" stop-color="#FFF7D9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="city" x1="890" y1="470" x2="1150" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9E5FF" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#94BFEA" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="flare" x1="320" y1="220" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9DD8FF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#9DD8FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <ellipse cx="1168" cy="150" rx="240" ry="180" fill="url(#sunGlow)"/>
+  <ellipse cx="1168" cy="150" rx="78" ry="78" fill="#FFF9EC"/>
+  <ellipse cx="1168" cy="150" rx="48" ry="48" fill="#FFF4C8"/>
+  <path d="M0 534C123 496 213 490 349 538C446 572 560 590 680 560C807 529 893 474 1046 494C1213 516 1308 612 1600 560V900H0V534Z" fill="#DCEFFF"/>
+  <path d="M0 590C132 552 274 552 405 607C548 667 676 677 834 624C972 577 1094 552 1247 590C1364 619 1486 653 1600 631V900H0V590Z" fill="#EAF6FF"/>
+  <path d="M822 494L899 470V900H822V494Z" fill="url(#city)"/>
+  <path d="M914 446L986 418V900H914V446Z" fill="url(#city)"/>
+  <path d="M1010 470L1084 440V900H1010V470Z" fill="url(#city)"/>
+  <path d="M1100 520L1182 495V900H1100V520Z" fill="url(#city)"/>
+  <path d="M1212 560L1298 532V900H1212V560Z" fill="url(#city)"/>
+  <rect x="842" y="548" width="12" height="18" fill="#FDFEFF"/>
+  <rect x="930" y="502" width="12" height="18" fill="#FDFEFF"/>
+  <rect x="1032" y="558" width="12" height="18" fill="#FDFEFF"/>
+  <rect x="1122" y="604" width="12" height="18" fill="#FDFEFF"/>
+  <rect x="1242" y="642" width="12" height="18" fill="#FDFEFF"/>
+  <path d="M178 312C256 232 389 196 542 218C701 241 796 332 910 332C1020 332 1116 260 1260 266C1380 271 1486 334 1600 438V900H0V430C56 399 118 372 178 312Z" fill="url(#flare)"/>
+  <g opacity="0.88" filter="url(#blur0)">
+    <ellipse cx="264" cy="242" rx="180" ry="68" fill="white"/>
+    <ellipse cx="524" cy="190" rx="214" ry="74" fill="white"/>
+    <ellipse cx="860" cy="256" rx="196" ry="68" fill="white"/>
+    <ellipse cx="1322" cy="286" rx="212" ry="74" fill="white"/>
+  </g>
+  <defs>
+    <filter id="blur0" x="24" y="56" width="1568" height="344" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_1_2"/>
+    </filter>
+  </defs>
+</svg>
