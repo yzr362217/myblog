@@ -162,7 +162,7 @@
 <h1 id="背景介绍">背景介绍</h1>
 <p>传统视觉感知模型在开放场景中，无法完成对陌生类别的正确识别</p>
 <p>对于开放场景的多种任务类型</p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/mul_task.png" alt="为应对开放场景中的挑战，多种任务类型被提出"></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/mul_task.png" alt="为应对开放场景中的挑战，多种任务类型被提出"></p>
 <h2 id="open-set-recognition">open-Set Recognition</h2>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1812.04246v2">论文原文</a></p>
 <ul>
@@ -186,7 +186,7 @@
 <h2 id="few-shot-learning">Few-Shot Learning</h2>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1904.05046">该文章总结166篇参考文献阐述了什么是少样本学习</a></p>
 <p>整体主题</p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/FSL.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/FSL.png" alt=""></p>
 <ul>
 <li>利用先验知识从数据,模型,算法角度处理问题</li>
 </ul>
@@ -199,7 +199,7 @@
 <ul>
 <li>核心为从大规模数据提炼知识，并迁移到下游感知任务</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vac.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vac.png" alt=""></p>
 <h1 id="开放词汇分类">开放词汇分类</h1>
 <ul>
 <li>基本原理：利用海量图像-文本对，将图像与文本映射到同一嵌入空间，实现概念跨模态语义对齐</li>
@@ -211,7 +211,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/compare_learn.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/compare_learn.png" alt=""></p>
 <h2 id="clip">CLIP</h2>
 <ul>
 <li>首个将Transformer、对比学习结合，从4亿互联网图文对数据集训练多模态图文匹配模型。</li>
@@ -231,7 +231,7 @@
 <li>学习图文多模态特征嵌入空间，使得可以在特征空间计算图文匹配相似性</li>
 <li>计算两两图文之间的相似度，并用交叉熵函数(对称交叉熵)计算损失</li>
 </ol>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip.png" alt=""></p>
 <h3 id="缺点">缺点</h3>
 <ul>
 <li>数据集需要大量人工清理(互联网上的数据可能包含噪声、错误或不准确的描述。为了确保模型能够学习到准确的视觉和语言关联，需要人工清理和验证数据集，确保图像和文本描述是准确匹配的。)</li>
@@ -247,7 +247,7 @@
 <li>在实际应用中,我们需要将预训练模型迁移至下游识别任务,但如果直接完全微调预训练视觉语言模型需要大量的数据和计算资源,所以对预训练模型的迁移学习的研究十分有必要,这里作者给出两个方向对模型进行迁移学习</li>
 </ul>
 <h3 id="提示学习">提示学习</h3>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/remind_learn.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/remind_learn.png" alt=""></p>
 <h4 id="文本提示学习">文本提示学习</h4>
 <h5 id="coop">CoOp</h5>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2109.01134">论文</a> <a target="_blank" rel="noopener" href="https://github.com/KaiyangZhou/CoOp">代码</a></p>
@@ -255,7 +255,7 @@
 <ul>
 <li>从手工提示进行改进,对提示模板进行学习,优化提示与句子之间的联系(将手工提示过程自动化)</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CoOp.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CoOp.png" alt=""></p>
 <h6 id="特点">特点</h6>
 <ul>
 <li>使用一组可学习向量(learnable context)对提示词中的上下文进行建模，在训练中使用分类损失进行向量优化</li>
@@ -265,7 +265,7 @@
 <ul>
 <li>可学习的上下文极大影响模型对于未知类预测的泛化性,学习到的固定提示会过拟合于特定的类别集合</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/dis_CoOp.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/dis_CoOp.png" alt=""></p>
 <h5 id="cocoop">CoCoOp</h5>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2203.05557">论文</a> <a target="_blank" rel="noopener" href="https://github.com/KaiyangZhou/CoOp">代码</a></p>
 <h6 id="思想">思想</h6>
@@ -277,7 +277,7 @@
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span></span></span></span></span></p>
 </li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CoCoOp.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CoCoOp.png" alt=""></p>
 <h6 id="特点">特点</h6>
 <ul>
 <li>提示学习过程以对应实例为条件，不影响未知类别，增强泛化性</li>
@@ -288,13 +288,13 @@
 <ul>
 <li>引入大语言模型的回答作为文本的prompt进行分类</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CuPL.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CuPL_prompts.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CuPL.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/CuPL_prompts.png" alt=""></p>
 <h6 id="特点">特点</h6>
 <ul>
 <li>性能的提升随着使用的LLM提示和图像提示的增加而增大</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/LLM.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/LLM.png" alt=""></p>
 <h4 id="视觉提示学习">视觉提示学习</h4>
 <ul>
 <li>在视觉主干网络（图像编码器）引入提示学习,优化图像特征</li>
@@ -310,15 +310,15 @@
 <ul>
 <li>只在第一个编码层插入提示</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-shallow-formula.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-shallow.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-shallow-formula.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-shallow.png" alt=""></p>
 <h6 id="vpt-deep">VPT-Deep</h6>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.08386">论文</a></p>
 <ul>
 <li>在每一个编码层的输入序列插入提示</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-deep-formula.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-deep.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-deep-formula.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vpt-deep.png" alt=""></p>
 <h5 id="dam-vp">DAM-VP</h5>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.08138">论文</a> <a target="_blank" rel="noopener" href="https://github.com/shikiw/DAM-VP">代码</a></p>
 <h6 id="思想">思想</h6>
@@ -339,8 +339,8 @@
 </ul>
 </li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/dam-vp.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/DAM-VP-f.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/dam-vp.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/DAM-VP-f.png" alt=""></p>
 <h4 id="多模态提示学习">多模态提示学习</h4>
 <h5 id="maple">MaPLe</h5>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2210.03117">论文</a> <a target="_blank" rel="noopener" href="https://github.com/muzairkhattak/multimodal-prompt-learning">代码</a></p>
@@ -348,13 +348,13 @@
 <ul>
 <li>在文本和图像编码器的前J层（总层数为K）分别加上额外可学习提示，剩下K-J层的提示编码来自上一层的输出。</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/maple.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/maple.png" alt=""></p>
 <h6 id="特点">特点</h6>
 <ul>
 <li>引入使用J个耦合函数（线性层）将文本提示转换为视觉提示，即视觉提示由文本提示生成</li>
 <li>共享可学习嵌入空间，促进模态间协同优化</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/maple-formula.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/maple-formula.png" alt=""></p>
 <h3 id="特征适配器">特征适配器</h3>
 <h4 id="clip-adapter">CLIP-adapter</h4>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2110.04544">论文</a> <a target="_blank" rel="noopener" href="https://github.com/gaopengcuhk/clip-adapter">代码</a></p>
@@ -371,14 +371,14 @@
 </ul>
 </li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-adapter.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-adapter.png" alt=""></p>
 <h5 id="结构">结构</h5>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-ada.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-ada.png" alt=""></p>
 <ul>
 <li>双层感知机</li>
 <li>残差融合<br>
-<img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/adapter-formula.png" alt=""><br>
-<img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/adapter-formula-f.png" alt=""></li>
+<img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/adapter-formula.png" alt=""><br>
+<img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/adapter-formula-f.png" alt=""></li>
 </ul>
 <h4 id="etris">ETRIS</h4>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2209.00068">论文</a> <a target="_blank" rel="noopener" href="https://github.com/kkakkkka/ETRIS">代码</a></p>
@@ -393,7 +393,7 @@
 <li>Zoom Layer：卷积和反卷积</li>
 <li>交互器：自注意力模块和交叉注意力模块</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ETRIS.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ETRIS.png" alt=""></p>
 <h4 id="tip-adapter">TIP-adapter</h4>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2111.03930">论文</a> <a target="_blank" rel="noopener" href="https://github.com/gaopengcuhk/Tip-Adapter">代码</a></p>
 <h5 id="思想">思想</h5>
@@ -402,20 +402,20 @@
 <li>基于小样本数据集设计查询-键值缓存来实现</li>
 </ul>
 <h5 id="实现">实现</h5>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/TIP-ADAPTER.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/TIP-ADAPTER.png" alt=""></p>
 <ul>
 <li>将小样本图像的CLIP视觉编码器特征作为缓存中的key，将对应类别标签作为Value存储。</li>
 <li>推理阶段，获取图像CLIP视觉编码器特征作为Query，生成对应的关系向量：<br>
-<img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f1.png" alt=""></li>
+<img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f1.png" alt=""></li>
 <li>图像分类预测由关系向量A和Value的点积及CLIP分类器的结果加权：<br>
-<img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f2.png" alt=""></li>
+<img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f2.png" alt=""></li>
 </ul>
 <h4 id="tip-adapter-f">TIP-adapter-F</h4>
 <h5 id="思想">思想</h5>
 <ul>
 <li>针对TIP-adapter做出改进,将缓存设置为可学习向量，并用原本的OneHot向量作为初始化，微调提升性能</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/tip-adapter-f.png" alt=""></p>
 <h1 id="开放词汇检测">开放词汇检测</h1>
 <ul>
 <li>学习范式：从自然图文对数据中获取开放类别知识，从区域级监督数据中学习目标检测</li>
@@ -423,7 +423,7 @@
 <h2 id="数据增广">数据增广</h2>
 <h3 id="ovr-cnn">OVR-CNN</h3>
 <p><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9577418">论文</a> <a target="_blank" rel="noopener" href="https://github.com/alirezazareian/ovr-cnn">代码</a></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn.png" alt=""></p>
 <h4 id="思想">思想</h4>
 <ul>
 <li>
@@ -445,13 +445,13 @@
 <li>Image (w*h)输入resnet50 backbone，提取区域的视觉特征(w/32*h/32)，并使用全连接层 (V2L) 将其转换到文本特征空间</li>
 <li>基于Caption提取文本特征。视觉特征与文本特征间计算弱监督形式的Grounding Loss</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn-pre.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn-pre.png" alt=""></p>
 <h5 id="detection-training">Detection Training</h5>
 <ul>
 <li>基于预训练的backbone，V2L层与embedding层构建检测器</li>
 <li>利用仅包含基础类的物体检测数据集对检测器进行监督训练</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn-detec.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/ovr-cnn-detec.png" alt=""></p>
 <h3 id="regionclip">RegionCLIP</h3>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2112.09106">论文</a> <a target="_blank" rel="noopener" href="https://github.com/microsoft/RegionCLIP">代码</a></p>
 <ul>
@@ -466,7 +466,7 @@
 <ul>
 <li>利用RCN构造region伪标签与image-text 一起预训练</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/region-clip.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/region-clip.png" alt=""></p>
 <h3 id="glip">GLIP</h3>
 <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2112.03857">论文</a> <a target="_blank" rel="noopener" href="https://github.com/microsoft/GLIP">代码</a></p>
 <h4 id="思想">思想</h4>
@@ -474,7 +474,7 @@
 <li>将物体匹配与短语定位任务统一起来进行预训练</li>
 <li>利用区域定位能力从图文对数据中构建准确的区域文本对数据</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/glip.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/glip.png" alt=""></p>
 <h4 id="实现">实现</h4>
 <ul>
 <li>利用已有的Grounding数据（80万）进行监督训练，得到教师模型</li>
@@ -488,25 +488,25 @@
 <li>更强的Grounding能力：支持Referring Expression Comprehension（REC）</li>
 </ul>
 <h4 id="特点">特点</h4>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/grouding-dino-featrues.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/grouding-dino-featrues.png" alt=""></p>
 <h3 id="vl-plm">VL-PLM</h3>
 <h4 id="思想">思想</h4>
 <ul>
 <li>借助视觉语言预训练模型为无标注图像构造“区域-文本”伪标签，训练物体检测器</li>
 </ul>
 <h4 id="实现">实现</h4>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vl-plm.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vl-plm-tag.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vl-plm.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vl-plm-tag.png" alt=""></p>
 <h3 id="marvelovd">MarvelOVD</h3>
 <h4 id="思想">思想</h4>
 <ul>
 <li>弥补视觉语言模型在区域推理中由于领域差异造成的噪声标签问题（伪标签不准确）</li>
 <li>检测器具备上下文特征提取能力与背景概念，动态结合检测器性质以弥补领域差异</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-think.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-think.png" alt=""></p>
 <h4 id="实现">实现</h4>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-1.png" alt=""></p>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-2.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-1.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/marvalovd-2.png" alt=""></p>
 <h3 id="generateu">GenerateU</h3>
 <h2 id="迁移学习">迁移学习</h2>
 <h3 id="vild">ViLD</h3>
@@ -517,9 +517,9 @@
 <li>添加L1损失，使检测器的ROI特征对齐CLIP特征</li>
 <li>对齐特征既包括基础类别，也包括图像中潜在的开放类别物体</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vild-think.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vild-think.png" alt=""></p>
 <h4 id="实现">实现</h4>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vild.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/vild.png" alt=""></p>
 <h3 id="lbp">LBP</h3>
 <h4 id="思想">思想</h4>
 <ul>

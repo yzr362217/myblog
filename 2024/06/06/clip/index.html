@@ -153,7 +153,7 @@
 <li>由于自然语言数据规模庞大且获取成本低廉，这使得 CLIP 能够学习到更丰富、更抽象的视觉概念和语义信息。</li>
 <li>为了更好地掌握一些分类，检测等任务的思想，有必要研读这一经典模型</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-all.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-all.png" alt=""></p>
 <h1 id="引言">引言</h1>
 <ul>
 <li>近年来，直接从原始文本中学习的预训练方法彻底改变了自然语言处理 (NLP)，然而，在其他领域，例如计算机视觉中，仍然标准地使用在 ImageNet 等众包标注数据集上预训练模型。可扩展的预训练方法，它们直接从 Web 文本中学习，很难在计算机视觉领域产生类似的突破</li>
@@ -178,7 +178,7 @@
 <li>文本编码器：Transformer</li>
 <li>图像编码器：resnet|ViT</li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-code.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-code.png" alt=""></p>
 <h2 id="训练">训练</h2>
 <ul>
 <li>对于 ResNet，作者训练了 ResNet-50、ResNet-101，然后是 3 个遵循 EfﬁcientNet 风格模型缩放的模型，它们的计算量分别约为 ResNet-50 的 4 倍、16 倍和 64 倍。它们分别表示为 RN50x4、RN50x16 和 RN50x64。</li>
@@ -214,7 +214,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-figure4.png" alt=""></p>
+<p><img src="/myblog/images/%E5%BC%80%E6%94%BE%E8%AF%8D%E6%B1%87%E8%A7%86%E8%A7%89%E6%84%9F%E7%9F%A5/clip-figure4.png" alt=""></p>
 <h3 id="零样本-clip-性能分析">零样本 CLIP 性能分析</h3>
 <ul>
 <li>CLIP 在大多数数据集上与完全监督的基线模型性能相当，并在一些数据集上表现更优。但 CLIP 在一些复杂和抽象的任务上表现较弱。</li>

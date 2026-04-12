@@ -274,37 +274,37 @@ C_i &amp;= X_i^\top X_i.
 <p>这意味着，通过正则化中介过程，AFL 可以在处理大规模客户端时依然保证解析解的最优性和稳定性。</p>
 <hr>
 <h2 id="4-experiments">4. experiments</h2>
-<p><img src="/images/federated/1.png" alt="alt text"></p>
-<p><img src="/images/federated/11.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/1.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/11.png" alt="alt text"></p>
 <ul>
 <li>使用一个虚拟数据集来测试AA定律，通过计算联合训练的权重和聚合权重之间的偏差（∆W）来完成。</li>
 </ul>
 <hr>
-<p><img src="/images/federated/2.png" alt="alt text"></p>
-<p><img src="/images/federated/222.png" alt="alt text"></p>
-<p><img src="/images/federated/22.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/2.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/222.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/22.png" alt="alt text"></p>
 <ul>
 <li>在CIFAR-10、CIFAR-100和Tiny-ImageNet数据集上，与FedAvg、FedProx、MOON、FedGen、FedDyn、FedNTD和FedDisco等现有FL技术进行比较。</li>
 <li>在非独立同分布（non-IID）设置下，AFL在各种情况下都显示出与其他方法相比有竞争力的性能，并且不受数据异质性的影响。</li>
 </ul>
 <hr>
-<p><img src="/images/federated/3.png" alt="alt text"></p>
-<p><img src="/images/federated/33.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/3.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/33.png" alt="alt text"></p>
 <ul>
 <li>展示了AFL在不同客户端数量和non-IID程度下的权重不变性。</li>
 <li>在CIFAR-100和Tiny-ImageNet上，随着客户端数量的增加，FedAvg的性能下降，而AFL保持了一致的性能。</li>
 <li>在CIFAR-100数据集上，即使在极端的异质性情况下（例如α = 0.005），AFL也显示出不变的性能。</li>
 </ul>
 <hr>
-<p><img src="/images/federated/4.png" alt="alt text"></p>
-<p><img src="/images/federated/44.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/4.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/44.png" alt="alt text"></p>
 <ul>
 <li>AFL在一次聚合中完成了训练，与其他需要多轮聚合的FL方法相比，大幅减少了训练时间。</li>
 <li>在CIFAR-100和Tiny-ImageNet数据集上，AFL实现了比现有FL方法快50到100倍的训练速度。</li>
 </ul>
 <hr>
-<p><img src="/images/federated/5.png" alt="alt text"></p>
-<p><img src="/images/federated/55.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/5.png" alt="alt text"></p>
+<p><img src="/myblog/images/federated/55.png" alt="alt text"></p>
 <ul>
 <li>在不同的γ值和客户端数量（K）下，作者研究了RI过程对性能的影响。</li>
 <li>当没有RI过程时，随着K的增加，性能下降，但使用RI过程后，不同γ值下的性能都是一致的。</li>

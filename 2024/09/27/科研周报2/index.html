@@ -190,7 +190,7 @@
 </li>
 </ul>
 <h4 id="method">method</h4>
-<p><img src="/images/week2/cite.png" alt="alt text"></p>
+<p><img src="/myblog/images/week2/cite.png" alt="alt text"></p>
 <ol>
 <li>
 <p>实例特征提取，使用预训练的视觉编码器 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext>img</mtext></msub></mrow><annotation encoding="application/x-tex">E_{\text{img}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.317502em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">img</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 将实例 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">x_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 编码为特征嵌入 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">e_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>：</p>
@@ -247,15 +247,15 @@ $$ v_i = \text{concat}(\text{mean}(s_i), \text{mean}(z_i)) \cdot W $$</p>
 </li>
 </ul>
 <h4 id="experiments">experiments</h4>
-<p><img src="/images/week2/e1.png" alt=""><br>
+<p><img src="/myblog/images/week2/e1.png" alt=""><br>
 与传统 MIL 方法和基于语言模型的方法的比较实验。作者将 FiVE 与其他七种注意力机制的 MIL 方法以及两种传统的 MIL 池化操作（最大池化和平均池化）进行了比较。结果表明，FiVE 在所有其他基线方法之上取得了更好的性能，这充分证明了细粒度训练方案在下游任务中的重要性。</p>
-<p><img src="/images/week2/e2.png" alt=""><br>
+<p><img src="/myblog/images/week2/e2.png" alt=""><br>
 由于零样本分类是一项具有挑战性的任务，因此作者尝试使用 FiVE 进行零样本分类，并将其与三种基于线性探测器的基线方法进行了比较。FiVE 在LUAD子类型数据集上获得了更高的准确率和Top-5准确率。</p>
-<p><img src="/images/week2/e3.png" alt=""><br>
+<p><img src="/myblog/images/week2/e3.png" alt=""><br>
 作者还进行了少样本分类实验，以展示 FiVE 的适应性和可迁移性。结果表明，随着训练数据量的增加，FiVE 的性能得到了显著提高，达到了几乎与完全监督学习相同的表现水平。</p>
-<p><img src="/images/week2/e4.png" alt=""><br>
+<p><img src="/myblog/images/week2/e4.png" alt=""><br>
 对 TFS 模块的有效性进行了评估，并通过比较不同阶段的特征增强效果来衡量其影响。TFS 模块对于 FiVE 的整体性能有显著的提升作用。</p>
-<p><img src="/images/week2/e5.png" alt=""><br>
+<p><img src="/myblog/images/week2/e5.png" alt=""><br>
 不同采样策略实验。作者研究了不同的采样策略对模型性能的影响，并确定了适当的超参数。在 MAXN 较大时，模型性能与样本比例的关系不明显，而在 MAXN 较小时，样本比例的变化会影响模型性能。</p>
 <h4 id="想法">想法</h4>
 <ul>
@@ -289,7 +289,7 @@ $$ v_i = \text{concat}(\text{mean}(s_i), \text{mean}(z_i)) \cdot W $$</p>
 <p>自监督学习：UNI采用自监督学习方法，特别是DINOv2算法，这是一种基于学生-教师知识蒸馏的方法，用于预训练大型的视觉变换器（Vision Transformer, ViT）架构。这种方法不需要标签数据，通过预测被遮蔽区域的内容来学习图像特征。</p>
 </li>
 </ul>
-<p><img src="/images/week2/uni.png" alt="alt text"></p>
+<p><img src="/myblog/images/week2/uni.png" alt="alt text"></p>
 </li>
 </ul>
 <p>作者认为，UNI作为一个自监督的基础模型，展现了在病理图像分析中的强大潜力，特别是在减少数据标注需求、提高跨任务泛化能力和应对复杂临床任务方面。</p>
