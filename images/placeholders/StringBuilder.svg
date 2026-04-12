@@ -1,0 +1,8 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="48" fill="#081321"/>
+  <rect x="36" y="36" width="1208" height="648" rx="36" fill="#0D1B31" stroke="#7DD3FC" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="96" y="176" fill="#7DD3FC" font-size="34" font-family="Segoe UI, Arial, sans-serif" letter-spacing="6">IMAGE PLACEHOLDER</text>
+  <text x="96" y="312" fill="#F8FAFC" font-size="74" font-family="Segoe UI, Arial, sans-serif" font-weight="700">StringBuilder.png</text>
+  <text x="96" y="402" fill="#CBD5E1" font-size="30" font-family="Segoe UI, Arial, sans-serif">原图缺失，当前使用站内占位图保持文章结构完整。</text>
+  <text x="96" y="466" fill="#94A3B8" font-size="24" font-family="Segoe UI, Arial, sans-serif">Missing source asset / Placeholder rendered for GitHub Pages</text>
+</svg>

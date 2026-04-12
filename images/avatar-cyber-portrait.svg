@@ -1,0 +1,45 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="98" y1="76" x2="612" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071325"/>
+      <stop offset="0.52" stop-color="#0A1B35"/>
+      <stop offset="1" stop-color="#09111E"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(365 205) rotate(90) scale(292)">
+      <stop stop-color="#7DD3FC" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coat" x1="256" y1="458" x2="485" y2="639" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18263D"/>
+      <stop offset="1" stop-color="#0E1727"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="361" y1="210" x2="361" y2="433" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFC3AB"/>
+      <stop offset="1" stop-color="#C98F7A"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="267" y1="156" x2="457" y2="333" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1728"/>
+      <stop offset="1" stop-color="#1C2C43"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="720" rx="180" fill="url(#bg)"/>
+  <circle cx="360" cy="272" r="236" fill="url(#halo)"/>
+  <circle cx="554" cy="122" r="44" fill="#67E8F9" fill-opacity="0.08"/>
+  <circle cx="162" cy="156" r="26" fill="#A78BFA" fill-opacity="0.12"/>
+  <path d="M177 593C216 506 278 460 360 460C442 460 504 506 543 593V646H177V593Z" fill="url(#coat)"/>
+  <path d="M285 505C307 491 332 484 360 484C388 484 413 491 435 505L402 646H318L285 505Z" fill="#E2E8F0" fill-opacity="0.08"/>
+  <path d="M321 423H399V486C399 507 381 524 360 524C339 524 321 507 321 486V423Z" fill="#D89C86"/>
+  <path d="M360 168C292 168 248 215 248 291C248 369 298 432 360 432C422 432 472 369 472 291C472 215 428 168 360 168Z" fill="url(#skin)"/>
+  <path d="M270 270C270 203 312 152 365 152C426 152 465 197 465 262C465 274 463 287 458 300C446 273 425 258 393 255C353 251 321 236 304 212C293 226 278 249 270 270Z" fill="url(#hair)"/>
+  <path d="M284 250C288 205 321 163 368 163C424 163 457 207 460 255C448 248 434 244 418 243C378 241 340 226 316 198C303 210 292 228 284 250Z" fill="#09111E"/>
+  <ellipse cx="314" cy="298" rx="18" ry="11" fill="#1F2937"/>
+  <ellipse cx="406" cy="298" rx="18" ry="11" fill="#1F2937"/>
+  <circle cx="320" cy="296" r="3.2" fill="#DBEAFE"/>
+  <circle cx="412" cy="296" r="3.2" fill="#DBEAFE"/>
+  <path d="M331 354C349 367 371 367 389 354" stroke="#8B5E52" stroke-width="8" stroke-linecap="round"/>
+  <path d="M355 314L344 340H364" stroke="#A56A58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M287 275C297 266 309 262 323 264" stroke="#132238" stroke-width="7" stroke-linecap="round"/>
+  <path d="M397 264C411 262 423 266 433 275" stroke="#132238" stroke-width="7" stroke-linecap="round"/>
+  <path d="M273 560C297 527 327 512 360 512C393 512 423 527 447 560" stroke="#7DD3FC" stroke-opacity="0.18" stroke-width="3"/>
+  <rect x="145" y="146" width="430" height="430" rx="132" stroke="#7DD3FC" stroke-opacity="0.18" stroke-width="2"/>
+</svg>
