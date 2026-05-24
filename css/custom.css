@@ -317,6 +317,18 @@ body {
   background: #edf7ff;
 }
 
+#aside-content .avatar-img,
+#sidebar .avatar-img,
+#aside-content .avatar-img img,
+#sidebar .avatar-img img,
+#aside-content .avatar-img:hover img,
+#sidebar .avatar-img:hover img,
+.site-hero__avatar img,
+.tag-hero__avatar img {
+  animation: none !important;
+  transform: none !important;
+}
+
 .author-info-name,
 .item-headline span,
 .card-tag-cloud a,
@@ -627,16 +639,16 @@ body {
   font-size: 1.02rem;
 }
 
-.tag-collection-grid {
+.tag-collection-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   padding: 0 2rem 2rem;
 }
 
 .tag-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
   transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 }
 
@@ -649,33 +661,73 @@ body {
 .tag-card__cover,
 .tag-card__cover-fallback {
   display: block;
-  min-height: 210px;
-  background: linear-gradient(135deg, rgba(122, 199, 255, 0.18), rgba(143, 98, 255, 0.12));
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.tag-card__cover img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 210px;
-  object-fit: cover;
+.tag-card__cover-mask {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: 1.3rem;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(13, 34, 56, 0.28), rgba(13, 34, 56, 0.74)),
+    linear-gradient(135deg, rgba(78, 156, 246, 0.26), rgba(143, 98, 255, 0.16));
+}
+
+.tag-card__cover-index {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.35rem 0.72rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.tag-card__cover-type {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .tag-card__body {
-  padding: 1.45rem 1.4rem 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.5rem 1.45rem 1.55rem;
 }
 
-.tag-card__date,
+.tag-card__meta,
 .tag-card__cats {
   color: var(--text-soft);
   font-size: 0.92rem;
 }
 
+.tag-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.tag-card__meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0.42rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(122, 199, 255, 0.1);
+  border: 1px solid rgba(122, 199, 255, 0.16);
+}
+
 .tag-card__title {
   display: block;
-  margin: 0.7rem 0 0.65rem;
   color: var(--text-main) !important;
-  font-size: 1.28rem;
+  font-size: 1.42rem;
   font-weight: 700;
   line-height: 1.45;
 }
@@ -685,9 +737,35 @@ body {
 }
 
 .tag-card__excerpt {
-  margin-top: 0.85rem;
   color: #466684;
   line-height: 1.9;
+}
+
+.tag-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.2rem;
+}
+
+.tag-card__footer-label {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tag-card__more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 118px;
+  padding: 0.72rem 1rem;
+  border-radius: 999px;
+  color: var(--text-main) !important;
+  background: linear-gradient(90deg, rgba(122, 199, 255, 0.16), rgba(255, 255, 255, 0.82));
+  border: 1px solid rgba(122, 199, 255, 0.22);
 }
 
 .tag-card--empty {
@@ -702,14 +780,22 @@ body {
 
 @media screen and (max-width: 1100px) {
   .tag-hero,
-  .tag-collection-grid {
+  .tag-collection-list {
     grid-template-columns: 1fr;
+  }
+
+  .tag-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tag-card__cover {
+    min-height: 220px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .tag-hero,
-  .tag-collection-grid {
+  .tag-collection-list {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -726,5 +812,10 @@ body {
 
   .tag-hero__avatar img {
     border-radius: 24px;
+  }
+
+  .tag-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
