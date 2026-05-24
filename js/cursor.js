@@ -41,7 +41,7 @@ class Cursor {
 
         document.body.appendChild((this.scr = document.createElement("style")));
         // 这里改变鼠标指针的颜色 由svg生成
-        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16px' height='16px'><circle cx='8' cy='8' r='6' fill='%23ff8f66' fill-opacity='.75' stroke='%23ffe6dc' stroke-width='2'/></svg>") 8 8, auto}`;
+        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24px' height='24px'><defs><radialGradient id='g' cx='35%25' cy='35%25' r='70%25'><stop offset='0%25' stop-color='%23fff0d8'/><stop offset='45%25' stop-color='%23ffd7a2'/><stop offset='100%25' stop-color='%23cb6f2b'/></radialGradient></defs><circle cx='12' cy='12' r='8.2' fill='url(%23g)' stroke='%236b3418' stroke-width='1.8'/><circle cx='9' cy='9' r='2.2' fill='%23fffaf1' fill-opacity='.95'/></svg>") 12 12, auto}`;
     }
 
     refresh() {
@@ -59,7 +59,7 @@ class Cursor {
     init() {
         document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
         document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
-        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 14, e.clientY - 14); this.pos.curr = {x: e.clientX - 14, y: e.clientY - 14}; this.cursor.classList.remove("hidden");};
+        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 17, e.clientY - 17); this.pos.curr = {x: e.clientX - 17, y: e.clientY - 17}; this.cursor.classList.remove("hidden");};
         document.onmouseenter = e => this.cursor.classList.remove("hidden");
         document.onmouseleave = e => this.cursor.classList.add("hidden");
         document.onmousedown  = e => this.cursor.classList.add("active");
