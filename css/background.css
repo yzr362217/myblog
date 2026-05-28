@@ -3,7 +3,8 @@
   inset: 0;
   overflow: hidden;
   background:
-    linear-gradient(rgba(11, 19, 28, 0.34), rgba(11, 19, 28, 0.44)),
+    linear-gradient(180deg, rgba(9, 16, 24, 0.38), rgba(9, 16, 24, 0.5)),
+    linear-gradient(115deg, rgba(255, 247, 236, 0.18), rgba(126, 170, 205, 0.16) 42%, rgba(21, 31, 43, 0.12)),
     url("/myblog/images/site-bg-rain.jpeg") center/cover no-repeat fixed;
 }
 
@@ -17,14 +18,21 @@
 
 #web_bg::before {
   background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.1));
+    linear-gradient(120deg, rgba(255, 255, 255, 0.1), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.12));
 }
 
 #web_bg::after {
   background:
-    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.22) 0 1px, transparent 2px),
-    radial-gradient(circle at 74% 30%, rgba(255, 255, 255, 0.18) 0 1px, transparent 2px),
-    radial-gradient(circle at 60% 72%, rgba(180, 218, 255, 0.2) 0 2px, transparent 3px);
-  opacity: 0.8;
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.48), transparent 72%);
+  opacity: 0.24;
+}
+
+@media screen and (max-width: 900px) {
+  #web_bg::after {
+    display: none;
+  }
 }
